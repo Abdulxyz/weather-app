@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebe6ced912.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Wheather App</title>
+</head>
+
+<body>
+
+    <form id="container">
+        <h1 id="heading">Weather</h1>
+
+        <div id="search-container">
+            <input type="text" name="location" placeholder="London" id="inputLocation" required>
+            <i class="fa-solid fa-magnifying-glass" onclick="getWeather(event)"></i>
+        </div>
+
+        <div>
+            <div id="image-temp">
+                <img src="" alt="" srcset="" id="weatherImg">
+                <div id="temperature"></div>
+            </div>
+
+            <div id="conditon"></div>
+            <hr>
+
+            <div id="location-container">
+                <i class="fa-solid fa-location-dot"></i>
+                <div id="location"></div>
+            </div>
+
+            <div id="date-container">
+                <i class="fa-solid fa-calendar-days"></i>
+                <div id="local-time"></div>
+            </div>
+
+        </div> <br>
+
+        <button onclick="getWeather(event)">Get Weather</button>
+    </form>
+</body>
+
+</html>

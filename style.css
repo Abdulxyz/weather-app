@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    margin: 0;
+    height: 100%;
+}
+body{
+    background-image: url("https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=300");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#container{
+    max-width: 300px;
+    min-width: 200px;
+    margin: 20px auto;
+    border: none;
+    background-color: rgba(216, 234, 250, 0.822);
+    padding: 30px;
+    border-radius: 50px;
+    backdrop-filter: blur(8px);
+}
+#search-container{
+    position: relative;
+}
+#search-container i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+h1{
+    margin-top: 0;
+    text-align: center;
+}
+input{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 8px;
+    padding-right: 30px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.719);
+}
+button{
+    padding: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.719);
+    font-weight: bold;
+    border-radius: 50px;
+    width: 100%;
+}
+
+button:hover{
+    box-shadow: 0 0 2px;
+}
+
+#temperature{
+    font-size: 35px;
+}
+#weatherImg{
+    height: 100%;
+    object-fit: cover;
+}
+
+#image-temp{
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+#location, #local-time, #temperature{
+    display: inline;
+    padding-left: 5px;
+}
+#location-container, #date-container{
+    margin-bottom: 8px;
+}
