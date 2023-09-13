@@ -8,7 +8,7 @@ function getWeather(event) {
 
         console.log("input validated");
 
-        const baseUrl = "http://api.weatherapi.com/v1/current.json?"
+        const baseUrl = "https://api.weatherapi.com/v1/current.json?"
         const key = "key=" + "4f3b6d15ed024685a80120020232406"
 
         const locationInput = document.getElementById('inputLocation')
