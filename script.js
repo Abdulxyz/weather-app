@@ -41,7 +41,7 @@ function getWeather(event) {
                 conditionElement.innerText = `${data.current.condition.text}`
                 temperatureElement.innerText = `${data.current.temp_c}\u00B0C`
                 imgUrl = `${data.current.condition.icon}`
-                imageElement.setAttribute("src", "http:" + imgUrl)
+                imageElement.setAttribute("src", "https:" + imgUrl)
                 headingElement.innerText = "Weather at " + `${data.location.name}`
 
             })
