@@ -23,14 +23,10 @@ function getWeather(event) {
             .then(response => response.json())
             .then(data => {
 
-                // const weatherLocation = JSON.stringify()
-                // const weatherCondition = JSON.stringify(data.current.condition.text)
-                // const weatherTemp = JSON.stringify(data.current.temp_c)
-
                 const headingElement = document.getElementById('heading')
                 const localTimeElement = document.getElementById('local-time')
                 const locationElement = document.getElementById('location')
-                const conditionElement = document.getElementById('conditon')
+                const conditionElement = document.getElementById('condition')
                 const temperatureElement = document.getElementById('temperature')
                 const imageElement = document.getElementById('weatherImg')
 
